@@ -1,0 +1,247 @@
+html {
+    scroll-behavior: smooth;
+}
+.heroImg {
+    display: inline-block;
+    padding: 25px;
+    margin-left: 5px; 
+    margin-top: 0;
+    contain: content;
+    width: 30%;
+    position: absolute;
+    right: 25px;
+}
+
+.heroContent {
+    width: 60%;
+    padding-bottom: 50px;
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+}
+
+.heroImg img {
+    width: 100%;
+}
+
+.hero {
+    padding: 25px;
+    padding-left: 50px;
+    vertical-align: middle;
+    position: relative;
+    height: 70vh;
+    max-height: 650px;
+}
+
+button {
+    background-color: #373738;
+
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+h2 {
+    display:flex;
+    color: white;
+    padding-left: 20px;
+    padding-top: 25px;
+    font-family: League Spartan;
+}
+
+body {
+    margin:0;
+    padding: 0;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #009379;
+    padding: 35px;
+}
+.flexContainer div {
+    width: 33%;
+    text-align: center;
+}
+
+.flexContainer {
+    color: white;
+}
+.mywork {
+    padding-top: 100px;
+}
+.workGrid {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "project1" "project2" "project3" "project4";
+}
+
+.workImg{
+    grid-area: workImg;
+    display: grid;
+    align-items: center;
+}
+.workImg img {
+    width: 100%;
+}
+.workText {
+    grid-area: workText;
+    color: white;
+    display: grid;
+    align-items: center;
+    align-content: center;
+}
+.workText button {
+    width: 200px;
+}
+
+.myWork h4 {
+    font-size: 50px;
+}
+.myWork p {
+    font-size: 24px;
+}
+.myWork button {
+    background-color: #009379;
+}
+
+#project1 {
+    grid-area: project1;
+    background-image: url(/images/project1\ BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "workImg workText";
+}
+#project2 {
+    grid-area: project2;
+    background-image: url(/images/project4\ BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "workImg workText";
+}
+#project3 {
+    grid-area: project3;
+    background-image: url(/images/project3\ BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "workImg workText";
+}
+#project4 {
+    grid-area: project4;
+    background-image: url(/images/project2\ BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "workImg workText";
+}
+
+.mainNav {
+    text-align: right;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 25px;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    left: 25px;
+}
+.navButton {
+    margin-left: 15px;
+    margin-right: 15px;
+    list-style: none;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #373738;
+}
+.navButton:hover, .hero button:hover {
+    background-color: #ddd;
+    color: #009379;
+  }
+  
+.active {
+    background-color: #009379;
+    color: white;
+  }
+
+footer { 
+    background-color:#373738;
+}
+.footerNav a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 20px;
+    color: white;
+}
+.footer {
+    color: white;
+}
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+    .flexContainer div {
+        width: 100%;
+    }
+    .workGrid {
+        grid-template-rows: min-content min-content min-content min-content;
+    }
+    #project1 {
+        grid-template-rows: min-content min-content;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "workImg" "workText";
+    }
+    #project2 {
+        grid-template-rows: min-content min-content;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "workImg" "workText";
+    }
+    #project3 {
+        grid-template-rows: min-content min-content;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "workImg" "workText";
+    }
+    #project4 {
+        grid-template-rows: min-content min-content;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "workImg" "workText";
+    }
+}
+
